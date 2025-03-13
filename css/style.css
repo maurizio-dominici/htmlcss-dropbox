@@ -209,6 +209,32 @@ section {
   font-size: 1.5rem;
 }
 
+#payment .col-30 li {
+  display: block;
+}
+
+.card {
+  height: 100%;
+  border: 1px solid black;
+}
+
+.card-top {
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid;
+}
+
+#payment .row {
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+#payment .row .icon-list-payment {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
 #payment li {
   margin-left: 40px;
 }
@@ -256,4 +282,11 @@ section {
   padding-bottom: 10px;
   font-size: 0.7rem;
   display: block;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  border-top: 1px solid white;
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
 }
