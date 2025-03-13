@@ -31,14 +31,28 @@ h1 {
   font-weight: 600;
 }
 
+button {
+  padding: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
 /* UTILS */
 
 .container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.blu {
+  background-color: #0062fe;
+  color: white;
+  font-size: 0.7rem;
+  padding: 7px;
+  border: none;
 }
 
 .row {
@@ -47,14 +61,8 @@ h1 {
   row-gap: 1rem;
   /* debug */
 
-  align-items: center;
-
-  /* margin-left: -0.5rem;
-  margin-right: -0.5rem; */
-}
-
-section {
-  padding: 40px 0;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 }
 
 .debug {
@@ -78,11 +86,12 @@ section {
   /* background-color: yellow; */
 }
 
-.col-1-3 {
-  width: calc(100% / 3);
+.col-30 {
+  width: 30%;
   /* debug */
-  border: 2px solid black;
-  background-color: rgb(111, 225, 219);
+
+  /* border: 2px solid black;
+  background-color: rgb(111, 225, 219); */
 }
 
 .col-1-4 {
@@ -98,11 +107,12 @@ section {
   background-color: rgb(34, 21, 134);
 }
 
-.col-2-3 {
-  width: calc(200% / 3);
+.col-70 {
+  width: 70%;
   /* debug */
-  border: 2px solid black;
-  background-color: rgb(188, 30, 32);
+
+  /* border: 2px solid black;
+  background-color: rgb(188, 30, 32); */
 }
 
 .col-1-5 {
@@ -112,12 +122,28 @@ section {
 /* # HEADER */
 
 .page-header {
-  background-color: #ffffff;
-  padding: 20px 0;
+  background-color: white;
+  padding: 1rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
 }
 
-.row.function {
-  align-items: center;
+.page-header li {
+  cursor: pointer;
+}
+
+.page-header img {
+  max-width: 100px;
+}
+
+.page-header li {
+  display: inline-block;
+}
+
+.page-header .function li {
+  margin-right: 30px;
 }
 
 .function {
@@ -125,12 +151,6 @@ section {
   font-size: 0.7rem;
   /* debug */
   /* background-color: blue; */
-}
-
-.row.login {
-  justify-content: flex-end;
-
-  align-items: center;
 }
 
 .login {
@@ -144,10 +164,29 @@ section {
 
 /* #MAIN */
 
-.blu {
+/* #JUMBO */
+
+#jumbo {
   background-color: #b4d0e7;
   min-height: 400pxpx;
 }
+
+#jumbo h1 {
+  font-size: 3.5rem;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+#jumbo p {
+  padding-bottom: 30px;
+  font-size: 0.8rem;
+}
+
+#jumbo button {
+  margin-bottom: 30px;
+}
+
+/* #PAYMENT */
 
 /* #FOOTER */
 .page-footer {
